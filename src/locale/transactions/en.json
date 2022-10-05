@@ -1,0 +1,17 @@
+{
+  "title": "Transactions",
+  "new": {
+    "to": "Recipient",
+    "count": "Qty",
+    "send": "Send",
+    "required": "Required"
+  },
+  "table": {
+    "transaction": "Transaction",
+    "gasPrice": "Gas",
+    "from": "Sender",
+    "to": "Recipient",
+    "value": "Value",
+    "timeStamp": "Time"
+  }
+}

@@ -1,16 +1,19 @@
-import { applicationReducer, IApplication } from './application/reducer';
 import { configureStore, Dispatch } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+import { RootCombine, rootReducer } from './root';
+import { persistStore } from 'redux-persist';
 
 export const store = configureStore({
-  reducer: {
-    application: applicationReducer,
-  },
+  reducer: rootReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
 });
 
-export type RootState = {
-  application: IApplication;
-};
+export const persistedStore = persistStore(store);
+
+export type RootState = RootCombine;
 
 export type AppDispatch = typeof store.dispatch;
 export const useAppDispatch: () => Dispatch = () => useDispatch<AppDispatch>();

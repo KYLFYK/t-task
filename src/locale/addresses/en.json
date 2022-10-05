@@ -1,0 +1,11 @@
+{
+  "title": "Addresses",
+  "table": {
+    "address": "Address",
+    "balance": "Balance"
+  },
+  "add": {
+    "placeholder": "Add new address",
+    "submit": "Send"
+  }
+}

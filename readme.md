@@ -1,23 +1,33 @@
-# Base React Application
-Use this repository to get started quickly with React
-***
-<kbd>React</kbd>
-<kbd>TypeScript</kbd>
-<kbd>Redux Toolkit</kbd>
-<kbd>Webpack</kbd>
-<kbd>Babel</kbd>
-<kbd>React Emotion</kbd>
-## Usage
+# Task app
+## Start
 ```bash
-#Clone the repository
-git clone https://github.com/KYLFYK/base-react-app
 #Install modules
 yarn install
+#Start in dev mode
+yarn start
+#Open http://localhost:8080/
 ```
-
-## Contributing
-Pull requests are welcome.
-
+## Build
+```bash
+#Install modules
+yarn install
+#Start build
+yarn build
+```
+## Build - production mode
+```bash
+#Install modules
+yarn install
+#Start build in production mode
+yarn build-prod
+```
+## Lint project
+```bash
+#Install modules
+yarn install
+#Start in dev mode
+yarn lint
+```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 

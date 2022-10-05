@@ -1,9 +1,9 @@
 {
-  "name": "react-base-config",
+  "name": "t-task",
   "version": "1.0.0",
-  "description": "Base react-app",
+  "description": "task-app",
   "main": "index.js",
-  "repository": "https://github.com/KYLFYK/base-react-app.git",
+  "repository": "https://github.com/KYLFYK/t-task.git",
   "author": "Maksim Bashkardinov",
   "license": "MIT",
   "scripts": {
@@ -13,15 +13,32 @@
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@emotion/babel-preset-css-prop": "^11.10.0",
+    "@ethersproject/units": "^5.7.0",
+    "@metamask/detect-provider": "^2.0.0",
     "@reduxjs/toolkit": "^1.8.5",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
     "@types/react-redux": "^7.1.24",
+    "@web3-react/core": "8.0.35-beta.0",
+    "@web3-react/metamask": "8.0.28-beta.0",
+    "@web3-react/types": "8.0.20-beta.0",
+    "antd": "^4.23.4",
+    "axios": "^1.0.0",
+    "ethers": "^5.7.1",
+    "i18next": "^21.9.2",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^11.18.6",
     "react-redux": "^8.0.2",
-    "typescript": "^4.8.2"
+    "react-router-dom": "^6.4.1",
+    "redux-persist": "^6.0.0",
+    "swr": "^1.3.0",
+    "typescript": "^4.8.2",
+    "uuid": "^9.0.0",
+    "web3": "^1.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
@@ -35,11 +52,17 @@
     "@types/webpack-env": "^1.18.0",
     "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
     "html-loader": "^4.1.0",
     "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.3",
+    "less-loader": "^11.0.0",
     "prettier": "^2.7.1",
     "react-refresh": "^0.14.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.0.2",
     "source-map-loader": "^4.0.0",
+    "style-loader": "^3.3.1",
     "ts-loader": "^9.3.1",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
@@ -47,5 +70,8 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.10.1"
+  },
+  "browser": {
+    "[module-name]": false
   }
 }

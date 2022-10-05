@@ -1,0 +1,9 @@
+{
+  "menu": {
+    "addresses": "Addresses",
+    "transactions": "Transactions"
+  },
+  "header": {
+    "search": "Looking for something"
+  }
+}

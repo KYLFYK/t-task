@@ -1,0 +1,50 @@
+.themed-popup {
+  background-color: var(--whiteC100);
+}
+
+.ant-select-item-option-active {
+  background-color: var(--whiteC200) !important;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: var(--whiteC200) !important;
+}
+
+.ant-tabs {
+  color: var(--text-COMMON_TEXT);
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--accent-PRIMARY) !important;
+}
+
+.ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before {
+  border-bottom-color: var(--whiteC900);
+}
+
+.ant-table {
+  color: var(--text-COMMON_TEXT);
+  background: var(--whiteC100);
+  transition: background-color .3s ease-out;
+}
+
+.ant-table-tbody > tr.ant-table-row:hover > td, .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background: var(--whiteC200);
+  transition: background-color .3s ease-out;
+}
+
+.ant-table-thead > tr > th {
+  background: var(--whiteC200);
+  border-bottom: 1px solid var(--whiteC300);
+  color: var(--text-HEADING);
+  transition: background-color .3s ease-out, border-bottom .3s ease-out;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid var(--whiteC300);
+  transition: border-bottom .3s ease-out;
+}
+
+.ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper, .ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:hover {
+  background: var(--whiteC400);
+}

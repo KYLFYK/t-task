@@ -33,6 +33,9 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js'],
     modules: [path.resolve(__dirname, 'src'), 'node_modules'],
   },
+  externals: {
+    ['@metamask']: '@metamask',
+  },
   module: {
     rules: [
       { test: /\.(html)$/, use: ['html-loader'] },
@@ -58,6 +61,47 @@ module.exports = {
         test: /\.js$/,
         use: ['source-map-loader'],
         enforce: 'pre',
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.less$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'less-loader',
+            options: {
+              lessOptions: {
+                modifyVars: {
+                  '@primary-color': '#852CF5',
+                  '@link-color': '#898989',
+                  '@success-color': '#2AD245',
+                  '@warning-color': '#FCBD44',
+                  '@error-color': '#F34F4F',
+                  '@font-size-base': '12px',
+                  '@heading-color': '#333333',
+                  '@text-color': '#121212',
+                  '@text-color-secondary': '#C5C5C5',
+                  '@disabled-color': '#898989',
+                  '@border-radius-base': '4px',
+                  '@border-color-base': '#F6F6F6',
+                },
+                javascriptEnabled: true,
+              },
+            },
+          },
+        ],
       },
     ],
   },

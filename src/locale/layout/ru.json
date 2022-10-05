@@ -1,0 +1,9 @@
+{
+  "menu": {
+    "addresses": "Адреса",
+    "transactions": "Транзакции"
+  },
+  "header": {
+    "search": "Поиск чего-либо"
+  }
+}

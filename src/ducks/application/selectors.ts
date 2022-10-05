@@ -1,3 +1,6 @@
-import { RootState } from '../index';
+import { useAppSelector } from '../index';
 
-export const useIsInitSelector = (state: RootState) => state.application.isInit;
+export const useLocaleSelector = () =>
+  useAppSelector((state) => state.application.locale);
+export const useThemeSelector = () =>
+  useAppSelector((state) => state.application.theme);
